@@ -41,6 +41,7 @@ HTML Template will appear here...
 Please feel free to email [aliwang2001@gmail.com](mailto:aliwang2001@gmail.com) if you need any help setting anything up.
 Tips and advice on how to make the website look even better is greatly appreciated!
 If you encounter anything weird in the formatting, please email. Thank you for the help!
-**Happy 4th of July!!*
+
+## Happy 4th of July!!
 **Alicia Wang**
   
