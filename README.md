@@ -13,6 +13,10 @@ No HTML/CSS experience necessary, all you have to do is follow the HTML template
 
 ## Creating your own contact card
 
+OPTIONAL: copy and paste "python /ul/aliwang/website/contactcard.py" into the wag server, and follow directions as shown. You don't need to read the rest of this boring guide to create your contact card.
+
+
+
 Please put your desired image in the /images/profilepics folder. If not, you can also provide the URL of your image. If you do not wish to put a picture, just use the path "images/profilepics/nopic.png" which will display the default profile picture.
 
 Tips: everything in HTML has a start tag and end tag, which has a slash
@@ -108,6 +112,9 @@ To provide a **link to your personal page**, please change the pathname to the p
 
 
 ## Adding article to home page
+
+OPTIONAL: Copy and paste "python /ul/aliwang/website/homearticle.py" into WAG server. You may skip the instructions below.
+
 
 Copy and paste the section below. Comments are in the code and will act as a guide.
 
