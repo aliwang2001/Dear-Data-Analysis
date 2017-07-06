@@ -314,6 +314,10 @@ img {
   background: url('../images/caltech/moore_walk.jpg') no-repeat;
 }
 
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
 
 /* Portfolio section styles
 /* ========================================== */
@@ -509,6 +513,9 @@ img {
 
 /* blog & single post section styles
 /* ========================================== */
+.grey {
+  background-color: #F5F5F5;
+}
 
 #blog, 
 #single-post {
@@ -577,8 +584,12 @@ img {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  color: #fff;
 }
-
+.slideshow-container:hover {
+  visibility: visible;
+  opacity: 1;
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -587,11 +598,13 @@ img {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
 }
 
 /* Position the "next button" to the right */
@@ -600,7 +613,6 @@ img {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   color: #ff6a13;
 }
@@ -620,12 +632,14 @@ img {
 }
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
   font-family: 'Source Sans Pro', sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
 }
 
 /* The dots/bullets/indicators */
@@ -639,6 +653,7 @@ img {
   display: inline-block;
   transition: background-color 0.6s ease;
   margin-top: 10px;
+  padding-bottom: 0;
 
 }
 
