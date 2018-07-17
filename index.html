@@ -2,195 +2,152 @@
 <html lang="en">
 <head>
 <!--
-Using Pure Mix template w/ alterations
-http://www.tooplate.com/view/2082-pure-mix
--->
-<script src="js/head.js"></script>
-</head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<script src="js/nav.js"></script>
+Template 2082 Pure Mix
+
+http://www.tooplate.com/view/2082-pure-mix
+
+-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!-- Site title
+   ================================================== -->
+	<title>Dear Data</title>
+
+	<!-- Bootstrap CSS
+   ================================================== -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Animate CSS
+   ================================================== -->
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	<!-- Font Icons CSS
+   ================================================== -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<!-- Main CSS
+   ================================================== -->
+      <link rel="stylesheet" href="css/style.css">
+
+	<!-- Google web font 
+   ================================================== -->	
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+  
+  <script src="js/jquery.js"></script> 
+              <script> 
+              $(function(){
+                $("#divId").load("new.html"); 
+              });
+              </script>
+
+</head>
+<body>
+
+
+<!-- Preloader section
+================================================== -->
+<div class="preloader">
+	<div class="sk-spinner sk-spinner-pulse"></div>
+</div>
+
+
+<!-- Navigation section
+================================================== -->
+<div class="nav-container">
+   <nav class="nav-inner transparent">
+
+      <div class="navbar">
+         <div class="container">
+            <div class="row">
+
+              <div class="brand">
+                <a href="index.html">Dear Data</a>
+              </div>
+
+              <div class="navicon">
+                <div class="menu-container">
+
+                  <div class="circle dark inline">
+                    <i class="icon ion-navicon"></i>
+                  </div>
+
+                  <div class="list-menu">
+                    <i class="icon ion-close-round close-iframe"></i>
+                    <div class="intro-inner">
+                      <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+   </nav>
+</div>
 
 
 <!-- Header section
 ================================================== -->
-<section id="header" class="header-one parallax-section">
+<section id="header" class="header-one">
 	<div class="container">
 		<div class="row">
 
-			<div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-8">
+			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
           <div class="header-thumb">
-              <h1>@MSC:
-                        <a href="" class="typewrite" data-period="2000" data-type='[ "new research on materials", "testing out protein structures", "new site still updating"]'>
-                        
-                          <span class="wrap"></span>
-                          
-                        </a>
-                      </h1>
+              <h1 class="wow fadeIn" data-wow-delay="1.6s">Dear Data</h1>
+              <h3 class="wow fadeInUp" data-wow-delay="1.9s">personal visualizations</h3>
           </div>
 			</div>
 
 		</div>
-	</div>
-  <div class ="container">
-  <div class ="row">
-            <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-8">
-
-              <a href="#blog" class="btn btn-default page-scroll">Learn More</a>
-
-      </div>
-      </div>
-      </div>		
+	</div>		
 </section>
 
-<section id = "colorbar" class="wow fadeIn" data-wow-delay="0.5"></section>
 
-<!-- A little a bit about MSC section
+<!-- Portfolio section
 ================================================== -->
-<section id="blog">
+<section id="portfolio">
    <div class="container">
-
       <div class="row">
 
+         <div class="col-md-12 col-sm-12">
 
-          <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.5s">
-          <h1>Bridging the gap between theory and application</h1>
-          <p>There has long been the dream that theory (quantum mechanics, molecular dynamics, and statistical mechanics) properly incorporated into computer software could be used to design new drugs, new catalysts,.</p>   
-          </div>
-          <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.5s">
-          <p>The pursuit of this dream has led to sufficient advances in quantum chemistry and molecular dynamics (collectively referred to as atomistic simulations) that there are enormous potential opportunities for application to numerous important industrial problems involving the materials sciences, biotechnology, and chemical technology.</p>   
-          </div>
-          <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.5s">
-          <p>There has long been the dream that theory (quantum mechanics, molecular dynamics, and statistical mechanics) properly incorporated into computer software could be used to design new drugs, new catalysts, new chemicals, and new materials. The pursuit of this dream has led to sufficient advances in quantum chemistry and molecular dynamics (c</p>   
-          </div>
-</div>
-</div>
-</section>
+              
+          <div id="divId" style="display:none;"></div>
 
-<section id = "colorbar" class="wow fadeIn" data-wow-delay="0.5"></section>
-
-<!-- Research section
-================================================== -->
-
-<section id="header" class="header-two wow fadeIn parallax-section" data-wow-delay="0.5">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
-          <div class="header-thumb">
-              <h1 class="wow fadeIn" data-wow-delay="0.5s">Research</h1>
-              <h3 class="wow fadeInUp" data-wow-delay="0.5s">Lastest News and Articles</h3>
-          </div>
-      </div>
-
-    </div>
-  </div>    
-</section>
-
-
-
-
-
-      
-
-<!-- TEMPLATE START
-          ================================================== -->
-<section id="blog">
-   <div class="container">
-
-          <div class="row">
-          <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1s">
-              <div class="blog-thumb">
-                    <a href="single-post.html"><h1>Article name</h1></a>
-                     <div class="post-format">
-                        <span>By <a href="#">PersonA</a></span>
-                        <span><i class="fa fa-date"></i> 4 July 2016, Sunday</span>
-                     </div>
-                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
-
-                    <a href="single-post.html" class="btn btn-default">Full Article</a>
-              </div>
-          </div>
-
-          <!-- SLIDESHOW START
-          ================================================== -->
-          <div class="wow fadeInUp col-md-8 col-sm-8" data-wow-delay="0.5s">
-                   <div class="slideshow-container">
-                            <div class="mySlides fade">
-                              <div class="numbertext">1 / 4</div>
-                              <img src="images/blog-img3.jpg" style="width:100%">
-                              <div class="text">Caption Text</div>
-                            </div>
-
-                            <div class="mySlides fade">
-                              <div class="numbertext">2 / 4</div>
-                              <img src="images/blog-img3.jpg" style="width:100%">
-                              <div class="text">Caption Two</div>
-                            </div>
-
-                            <div class="mySlides fade">
-                              <div class="numbertext">3 / 4</div>
-                              <img src="images/blog-img3.jpg" style="width:100%">
-                              <div class="text">Caption Three</div>
-                            </div>
-                            
-                              <div class="mySlides fade">
-                              <div class="numbertext">4 / 4</div>
-                              <img src="images/blog-img3.jpg" style="width:100%">
-                              <div class="text">Caption Four</div>
-                            </div>
-
-                        <a class="prev">&#10094;</a>
-                        <a class="next">&#10095;</a>
-
-                            <div style="text-align:center">
-                              <span class="dot"></span>
-                              <span class="dot" ></span>
-                              <span class="dot" ></span>
-                              <span class="dot"></span>
-                            </div>
-                  </div>
-          </div>
-          <!-- SLIDESHOW END
-          ================================================== -->
-         </div>
-</div>
-</section>
-
-      <!-- Template END
-          ================================================== -->
-
-<section id = "blog" class="grey">
-   <div class = "container">
-        <div class = "row">
-        
-      <!-- IMAGE START
-      ================================================== -->
-      <div class="wow fadeInUp col-md-8 col-sm-8" data-wow-delay="0.5s">
-               <img src="images/blog-img1.jpg" class="img-responsive">
-      </div>
-      <!-- IMAGE END
-      ================================================== -->
-
-         <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.5s">
-              <div class="blog-thumb">
-                    <a href="single-post.html"><h1>Article Name</h1></a>
-                     <div class="post-format">
-                        <span>By <a href="#">PersonB</a></span>
-                        <span><i class="fa fa-date"></i> 4 July 2016, Sunday</span>
-                     </div>
-                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
-
-                    <a href="single-post.html" class="btn btn-default">Full Article</a>
-              </div>
-          </div>
-      </div>
-   </div>
+                  
+      </div>                          
 </section>
 
 <!-- Footer section
 ================================================== -->
-<script src="js/footer.js"></script>
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<p class="wow fadeInUp"  data-wow-delay="0.3s">Copyright © 2018</p>
+				<ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
+					<li><a href="#" class="fa fa-facebook"></a></li>
+					<li><a href="#" class="fa fa-twitter"></a></li>
+					<li><a href="#" class="fa fa-dribbble"></a></li>
+					<li><a href="#" class="fa fa-behance"></a></li>
+					<li><a href="#" class="fa fa-google-plus"></a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</footer>
 
 <!-- Javascript 
 ================================================== -->
@@ -200,12 +157,8 @@ http://www.tooplate.com/view/2082-pure-mix
 <script src="js/imagesloaded.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<!-- Custom Theme JavaScript
-<script src="js/theme.js"></script>
--->
 
 
 </body>
 </html>
+

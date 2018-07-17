@@ -5,90 +5,129 @@ $(window).load(function(){
     $('.preloader').fadeOut(1000); // set duration in brackets    
 });
 
- /* jQuery NAVIGATION
-  -----------------------------------------------*/
-// jQuery to collapse the navbar on scroll
 
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-});
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
-
-/* SINGLE PAGE TABS BIO/CALENDAR/PUBLICATONS TOGGLING */
-function tabs(evt, name) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(name).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
- /* Google Map
------------------------------------------------*/
-var map = '';
-var center;
-
-function initialize() {
-    var mapOptions = {
-      zoom: 16,
-      center: new google.maps.LatLng(34.138998, -118.126707),
-      scrollwheel: false
-    };
-  
-    map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
-
-    google.maps.event.addDomListener(map, 'idle', function() {
-        calculateCenter();
-    });
-  
-    google.maps.event.addDomListener(window, 'resize', function() {
-        map.setCenter(center);
-    });
-}
-
-function calculateCenter() {
-  center = map.getCenter();
-}
-
-function loadGoogleMap(){
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-    document.body.appendChild(script);
-}
+var $container;
+var filters = {};
 
 $(function(){
-  loadGoogleMap();
+
+  $container = $('#container');
+
+  createContent();
+
+  var $filterDisplay = $('#filter-display');
+
+  $container.isotope();
+  // do stuff when checkbox change
+  $('#options').on( 'change', function( jQEvent ) {
+    var $checkbox = $( jQEvent.target );
+    manageCheckbox( $checkbox );
+
+    var comboFilter = getComboFilter( filters );
+
+    $container.isotope({ filter: comboFilter });
+
+    $filterDisplay.text( comboFilter );
+  });
+
 });
 
+/*
+var data = {
+  brands: 'brand1 brand2 brand3 brand4'.split(' '),
+  productTypes: 'type1 type2 type3 type4'.split(' '),
+  colors: 'red blue yellow green'.split(' '),
+  sizes: 'uk-size8 uk-size9 uk-size10 uk-size11'.split(' ')
+};
+*/
+function createContent() {
+  var brand, productType, color, size;
+  var items = '';
+  $container.append( items );
+}
 
-/* Isotope Portfolio
------------------------------------------------*/
+
+function getComboFilter( filters ) {
+  var i = 0;
+  var comboFilters = [];
+  var message = [];
+
+  for ( var prop in filters ) {
+    message.push( filters[ prop ].join(' ') );
+    var filterGroup = filters[ prop ];
+    // skip to next filter group if it doesn't have any values
+    if ( !filterGroup.length ) {
+      continue;
+    }
+    if ( i === 0 ) {
+      // copy to new array
+      comboFilters = filterGroup.slice(0);
+    } else {
+      var filterSelectors = [];
+      // copy to fresh array
+      var groupCombo = comboFilters.slice(0); // [ A, B ]
+      // merge filter Groups
+      for (var k=0, len3 = filterGroup.length; k < len3; k++) {
+        for (var j=0, len2 = groupCombo.length; j < len2; j++) {
+          filterSelectors.push( groupCombo[j] + filterGroup[k] ); // [ 1, 2 ]
+        }
+
+      }
+      // apply filter selectors to combo filters for next group
+      comboFilters = filterSelectors;
+    }
+    i++;
+  }
+
+  var comboFilter = comboFilters.join(', ');
+  return comboFilter;
+}
+
+function manageCheckbox( $checkbox ) {
+  var checkbox = $checkbox[0];
+
+  var group = $checkbox.parents('.option-set').attr('data-group');
+  // create array for filter group, if not there yet
+  var filterGroup = filters[ group ];
+  if ( !filterGroup ) {
+    filterGroup = filters[ group ] = [];
+  }
+
+  var isAll = $checkbox.hasClass('all');
+  // reset filter group if the all box was checked
+  if ( isAll ) {
+    delete filters[ group ];
+    if ( !checkbox.checked ) {
+      checkbox.checked = 'checked';
+    }
+  }
+  // index of
+  var index = $.inArray( checkbox.value, filterGroup );
+
+  if ( checkbox.checked ) {
+    var selector = isAll ? 'input' : 'input.all';
+    $checkbox.siblings( selector ).removeAttr('checked');
+
+
+    if ( !isAll && index === -1 ) {
+      // add filter to group
+      filters[ group ].push( checkbox.value );
+    }
+
+  } else if ( !isAll ) {
+    // remove filter from group
+    filters[ group ].splice( index, 1 );
+    // if unchecked the last box, check the all
+    if ( !$checkbox.siblings('[checked]').length ) {
+      $checkbox.siblings('input.all').attr('checked', 'checked');
+    }
+  }
+
+}
+
+
+/* Isotope Filter
+-----------------------------------------------
 jQuery(document).ready(function($){
 
   if ( $('.iso-box-wrapper').length > 0 ) { 
@@ -140,85 +179,9 @@ jQuery(document).ready(function($){
   }
 
 });
-(function() {
+*/
 
-  init(); //on page load - show first slide, hidethe rest
-
-  function init() {
-
-    parents = document.getElementsByClassName('slideshow-container');
-
-    for (j = 0; j < parents.length; j++) {
-      var slides = parents[j].getElementsByClassName("mySlides");
-      var dots = parents[j].getElementsByClassName("dot");
-      slides[0].classList.add('active-slide');
-      dots[0].classList.add('active');
-    }
-  }
-
-  dots = document.getElementsByClassName('dot'); //dots functionality
-
-  for (i = 0; i < dots.length; i++) {
-
-    dots[i].onclick = function() {
-
-      slides = this.parentNode.parentNode.getElementsByClassName("mySlides");
-
-      for (j = 0; j < this.parentNode.children.length; j++) {
-        this.parentNode.children[j].classList.remove('active');
-        slides[j].classList.remove('active-slide');
-        if (this.parentNode.children[j] == this) {
-          index = j;
-        }
-      }
-      this.classList.add('active');
-      slides[index].classList.add('active-slide');
-
-    }
-  }
-//prev/next functionality
-  links = document.querySelectorAll('.slideshow-container a');
-
-  for (i = 0; i < links.length; i++) {
-    links[i].onclick = function() {
-      current = this.parentNode;
-
-      var slides = current.getElementsByClassName("mySlides");
-      var dots = current.getElementsByClassName("dot");
-      curr_slide = current.getElementsByClassName('active-slide')[0];
-      curr_dot = current.getElementsByClassName('active')[0];
-      curr_slide.classList.remove('active-slide');
-      curr_dot.classList.remove('active');
-      if (this.className == 'next') {
-
-        if (curr_slide.nextElementSibling.classList.contains('mySlides')) {
-          curr_slide.nextElementSibling.classList.add('active-slide');
-          curr_dot.nextElementSibling.classList.add('active');
-        } else {
-          slides[0].classList.add('active-slide');
-          dots[0].classList.add('active');
-        }
-
-      }
-
-      if (this.className == 'prev') {
-
-        if (curr_slide.previousElementSibling) {
-          curr_slide.previousElementSibling.classList.add('active-slide');
-          curr_dot.previousElementSibling.classList.add('active');
-        } else {
-          slides[slides.length - 1].classList.add('active-slide');
-          dots[slides.length - 1].classList.add('active');
-        }
-
-      }
-
-    }
-
-  }
-})();
-
- /*Navigation Bar
+ /* Navigation Bar
   -----------------------------------------------*/
 $(document).ready(function() { 
     "use strict";
@@ -285,69 +248,56 @@ $(document).ready(function(){
 
   });
 
+   /* MODAL IMAGE JS
+  -------------------------------*/
 
-/*TYPING ANIMATION*/
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
+  // Get the modal
+var modal = document.getElementById('myModal');
 
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
 
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
 
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-/* FOOTER SECTION */
-
-$(function(){
-  $("#footer").load("footer.html"); 
-});
-
-
-
+   /* INCLUDE HTML
+  -------------------------------*/
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain atrribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        } 
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  }

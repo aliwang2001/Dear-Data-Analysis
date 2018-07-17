@@ -1,0 +1,919 @@
+<div id="options">
+<div class="option-set" data-group="Theme">
+<input type="checkbox" value="" id="Theme-all" class="all" checked /><label for="Theme-all">all Theme</label>
+<input type="checkbox" value=".Internal: Self-Reflection" id="Internal: Self-Reflection" /><label for="Internal: Self-Reflection">Internal: Self-Reflection</label>
+<input type="checkbox" value=".ExternalPeople" id="ExternalPeople" /><label for="ExternalPeople">ExternalPeople</label>
+<input type="checkbox" value=".ExternalPhysical" id="ExternalPhysical" /><label for="ExternalPhysical">ExternalPhysical</label>
+</div>
+<div class="option-set" data-group="Data">
+<input type="checkbox" value="" id="Data-all" class="all" checked /><label for="Data-all">all Data</label>
+<input type="checkbox" value=".Nominal" id="Nominal" /><label for="Nominal">Nominal</label>
+<input type="checkbox" value=".Ordinal" id="Ordinal" /><label for="Ordinal">Ordinal</label>
+<input type="checkbox" value=".Numerical" id="Numerical" /><label for="Numerical">Numerical</label>
+<input type="checkbox" value=".Temporal" id="Temporal" /><label for="Temporal">Temporal</label>
+<input type="checkbox" value=".Intensity" id="Intensity" /><label for="Intensity">Intensity</label>
+<input type="checkbox" value=".Geocoord" id="Geocoord" /><label for="Geocoord">Geocoord</label>
+</div>
+<div class="option-set" data-group="Sematic">
+<input type="checkbox" value="" id="Sematic-all" class="all" checked /><label for="Sematic-all">all Sematic</label>
+<input type="checkbox" value=".Relationship" id="Relationship" /><label for="Relationship">Relationship</label>
+<input type="checkbox" value=".Group" id="Group" /><label for="Group">Group</label>
+</div>
+<div class="option-set" data-group="Context">
+<input type="checkbox" value="" id="Context-all" class="all" checked /><label for="Context-all">all Context</label>
+<input type="checkbox" value=".Who/Whom" id="Who/Whom" /><label for="Who/Whom">Who/Whom</label>
+<input type="checkbox" value=".Where" id="Where" /><label for="Where">Where</label>
+<input type="checkbox" value=".When" id="When" /><label for="When">When</label>
+<input type="checkbox" value=".ExactTime" id="ExactTime" /><label for="ExactTime">ExactTime</label>
+<input type="checkbox" value=".Why" id="Why" /><label for="Why">Why</label>
+<input type="checkbox" value=".What" id="What" /><label for="What">What</label>
+<input type="checkbox" value=".How" id="How" /><label for="How">How</label>
+</div>
+<div class="option-set" data-group="VisualAnnotation">
+<input type="checkbox" value="" id="VisualAnnotation-all" class="all" checked /><label for="VisualAnnotation-all">all VisualAnnotation</label>
+<input type="checkbox" value=".PersonalInput" id="PersonalInput" /><label for="PersonalInput">PersonalInput</label>
+<input type="checkbox" value=".Highlighting" id="Highlighting" /><label for="Highlighting">Highlighting</label>
+<input type="checkbox" value=".Attribute" id="Attribute" /><label for="Attribute">Attribute</label>
+</div>
+<div class="option-set" data-group="VisualLayout">
+<input type="checkbox" value="" id="VisualLayout-all" class="all" checked /><label for="VisualLayout-all">all VisualLayout</label>
+<input type="checkbox" value=".List" id="List" /><label for="List">List</label>
+<input type="checkbox" value=".Grid" id="Grid" /><label for="Grid">Grid</label>
+<input type="checkbox" value=".Stacked" id="Stacked" /><label for="Stacked">Stacked</label>
+<input type="checkbox" value=".Radial" id="Radial" /><label for="Radial">Radial</label>
+<input type="checkbox" value=".Tree" id="Tree" /><label for="Tree">Tree</label>
+<input type="checkbox" value=".Network" id="Network" /><label for="Network">Network</label>
+<input type="checkbox" value=".Facet" id="Facet" /><label for="Facet">Facet</label>
+<input type="checkbox" value=".Freeform" id="Freeform" /><label for="Freeform">Freeform</label>
+</div>
+<div class="option-set" data-group="VisualEncoding">
+<input type="checkbox" value="" id="VisualEncoding-all" class="all" checked /><label for="VisualEncoding-all">all VisualEncoding</label>
+<input type="checkbox" value=".Shape" id="Shape" /><label for="Shape">Shape</label>
+<input type="checkbox" value=".Position" id="Position" /><label for="Position">Position</label>
+<input type="checkbox" value=".Size" id="Size" /><label for="Size">Size</label>
+<input type="checkbox" value=".Color" id="Color" /><label for="Color">Color</label>
+<input type="checkbox" value=".Weight/boldness" id="Weight/boldness" /><label for="Weight/boldness">Weight/boldness</label>
+<input type="checkbox" value=".Texture" id="Texture" /><label for="Texture">Texture</label>
+<input type="checkbox" value=".Orientation" id="Orientation" /><label for="Orientation">Orientation</label>
+<input type="checkbox" value=".Stroke" id="Stroke" /><label for="Stroke">Stroke</label>
+<input type="checkbox" value=".Connection" id="Connection" /><label for="Connection">Connection</label>
+<input type="checkbox" value=".Containment/Enclosure" id="Containment/Enclosure" /><label for="Containment/Enclosure">Containment/Enclosure</label>
+<input type="checkbox" value=".Onomatopoeia" id="Onomatopoeia" /><label for="Onomatopoeia">Onomatopoeia</label>
+<input type="checkbox" value=".Fill/NoFill" id="Fill/NoFill" /><label for="Fill/NoFill">Fill/NoFill</label>
+</div>
+<div class="option-set" data-group="VisualMarks">
+<input type="checkbox" value="" id="VisualMarks-all" class="all" checked /><label for="VisualMarks-all">all VisualMarks</label>
+<input type="checkbox" value=".Dot" id="Dot" /><label for="Dot">Dot</label>
+<input type="checkbox" value=".Line" id="Line" /><label for="Line">Line</label>
+<input type="checkbox" value=".Rect" id="Rect" /><label for="Rect">Rect</label>
+<input type="checkbox" value=".Triangle" id="Triangle" /><label for="Triangle">Triangle</label>
+<input type="checkbox" value=".Circle" id="Circle" /><label for="Circle">Circle</label>
+<input type="checkbox" value=".Repeat" id="Repeat" /><label for="Repeat">Repeat</label>
+<input type="checkbox" value=".Area" id="Area" /><label for="Area">Area</label>
+<input type="checkbox" value=".Glyph" id="Glyph" /><label for="Glyph">Glyph</label>
+<input type="checkbox" value=".RealObject" id="RealObject" /><label for="RealObject">RealObject</label>
+<input type="checkbox" value=".Personal" id="Personal" /><label for="Personal">Personal</label>
+</div>
+ </div>
+<p id="filter-display"></p> <div id="container">
+<div class="iso-box item ExternalPhysical Nominal Temporal When Why How Highlighting Attribute Grid Stacked Shape Position Dot Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_01_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of clocks</h2>
+<h2>Week 1</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal When How Radial Shape Position Orientation Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_01+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of clocks</h2>
+<h2>Week 1</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical Temporal Who/Whom Where When What How Highlighting Attribute List Stacked Size Color Texture Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_02_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of public transportation</h2>
+<h2>Week 2</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Relationship Where When How Radial Network Freeform Shape Texture Orientation Connection Fill/NoFill Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_02+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of public transportation</h2>
+<h2>Week 2</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Numerical Who/Whom What How Highlighting Attribute List Stacked Radial Freeform Shape Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_03_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of thank yous</h2>
+<h2>Week 3</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Temporal Who/Whom When List Grid Position Texture Triangle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_03+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of thank yous</h2>
+<h2>Week 3</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal Numerical Temporal Who/Whom Where When Why What How Attribute List Grid Stacked Shape Position Size Color Orientation Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_04_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of mirrors</h2>
+<h2>Week 4</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical Temporal Where When How Highlighting Grid Position Size Color Circle Repeat col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_04+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of mirrors</h2>
+<h2>Week 4</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal Numerical Intensity Relationship Who/Whom When What How Highlighting Attribute Tree Network Shape Size Color Texture Orientation Connection Dot Line Repeat Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_05_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of things we buy</h2>
+<h2>Week 5</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical Temporal Intensity When Why What How Attribute List Grid Stacked Position Color Texture Fill/NoFill Circle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_05+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of things we buy</h2>
+<h2>Week 5</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Ordinal Who/Whom Where When How Highlighting Attribute List Grid Stacked Facet Shape Position Color Containment/Enclosure Dot Line Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_06_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of physical contact</h2>
+<h2>Week 6</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Ordinal Temporal Intensity Who/Whom When What How Highlighting Radial Tree Facet Size Color Orientation Line Circle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_06+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of physical contact</h2>
+<h2>Week 6</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Ordinal Temporal Intensity Group Who/Whom When What How Highlighting Attribute List Grid Facet Shape Position Color Connection Fill/NoFill Dot Line Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_07_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of complaints</h2>
+<h2>Week 7</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Temporal Who/Whom When What Radial Facet Color Orientation Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_07+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of complaints</h2>
+<h2>Week 7</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal Who/Whom Where When Why What How Attribute Radial Facet Freeform Shape Size Color Texture Orientation Dot Line Repeat Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_08_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of phone addiction</h2>
+<h2>Week 8</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal When Why List Grid Stacked Position Color Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_08+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of phone addiction</h2>
+<h2>Week 8</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Numerical Temporal Who/Whom When What How Highlighting Attribute List Grid Shape Position Color Orientation Fill/NoFill Dot Line Rect Repeat Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_09_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of Giorgia and Stefanie</h2>
+<h2>Week 9</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Temporal Relationship Who/Whom Where When Why How List Grid Position Size Color Connection Line Circle Repeat col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_09+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of Giorgia and Stefanie</h2>
+<h2>Week 9</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Relationship Group What Highlighting Attribute Grid Color Texture Connection Containment/Enclosure Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_10_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of to-do lists</h2>
+<h2>Week 10</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal Relationship When What Stacked Position Color Connection Dot Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_10+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of to-do lists</h2>
+<h2>Week 10</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Group Who/Whom What Highlighting Attribute Tree Facet Freeform Shape Color Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_11_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of emotions</h2>
+<h2>Week 11</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Ordinal Temporal When What How List Grid Position Size Color Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_11+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of emotions</h2>
+<h2>Week 11</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Temporal Group Who/Whom When What Highlighting Attribute List Grid Position Color Containment/Enclosure Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_12_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of people</h2>
+<h2>Week 12</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Numerical Temporal Who/Whom When List Grid Position Size Color Dot Circle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_12+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of people</h2>
+<h2>Week 12</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Ordinal What How Attribute Radial Network Facet Freeform Shape Size Color Connection Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_13_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of desires</h2>
+<h2>Week 13</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Temporal When What Radial Color Orientation Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_13+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of desires</h2>
+<h2>Week 13</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical Who/Whom What How Freeform Shape Size Color Dot Line Rect Triangle Circle Repeat Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_14_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of productivity / schedules</h2>
+<h2>Week 14</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical What How Tree Network Facet Color Line Repeat col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_14+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of productivity / schedules</h2>
+<h2>Week 14</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Temporal Who/Whom What How Facet Freeform Shape Color Dot Line Rect Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_15_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of compliments</h2>
+<h2>Week 15</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Temporal Who/Whom When What List Grid Stacked Shape Position Color Texture Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_15+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of compliments</h2>
+<h2>Week 15</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Relationship Group Who/Whom Where What Attribute List Grid Facet Freeform Shape Position Size Color Connection Containment/Enclosure Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_16_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of wardrobe</h2>
+<h2>Week 16</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal Intensity What How Highlighting List Position Color Texture Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_16+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of wardrobe</h2>
+<h2>Week 16</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical What How Highlighting Attribute List Facet Shape Size Color Texture Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_17_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of food preferences</h2>
+<h2>Week 17</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal What How Highlighting List Grid Stacked Color Texture Triangle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_17+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of food preferences</h2>
+<h2>Week 17</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal Numerical Temporal Who/Whom Where When What How Highlighting Attribute List Grid Network Shape Position Size Color Orientation Connection Containment/Enclosure Fill/NoFill Dot Line Circle Repeat Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_18_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of drinks</h2>
+<h2>Week 18</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal Temporal When Why What How Highlighting Attribute List Grid Position Size Color Rect Repeat col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_18+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of drinks</h2>
+<h2>Week 18</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal Temporal Group Where When What How Highlighting Attribute List Network Shape Color Connection Containment/Enclosure Dot Line Glyph RealObject col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_19_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of beauty and make up</h2>
+<h2>Week 19</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal What How Highlighting Attribute Radial Tree Shape Color Line Rect Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_19+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of beauty and make up</h2>
+<h2>Week 19</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical Temporal Intensity Who/Whom When Why What How Highlighting Attribute List Freeform Shape Position Color Texture Stroke Dot Line Glyph RealObject col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_20_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of interesting things</h2>
+<h2>Week 20</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Where Why What How Stacked Facet Color Line Rect col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_20+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of interesting things</h2>
+<h2>Week 20</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal Geocoord Where What How Highlighting Grid Network Shape Position Size Color Connection Onomatopoeia Dot Line Area Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_21_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of our cities</h2>
+<h2>Week 21</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal Geocoord Relationship Where When Why What Highlighting Grid Network Position Color Connection Fill/NoFill Dot Line Circle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_21+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of our cities</h2>
+<h2>Week 21</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical Temporal Intensity Who/Whom Where When Why What How Radial Shape Position Size Dot Line Circle Repeat Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_22_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of my past</h2>
+<h2>Week 22</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal Where When What List Grid Position Size Color Line Rect col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_22+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of my past</h2>
+<h2>Week 22</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Ordinal Relationship Who/Whom When What How Highlighting Attribute Network Facet Freeform Shape Color Orientation Connection Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_23_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of being nicer</h2>
+<h2>Week 23</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Who/Whom Where What Freeform Shape Color Dot Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_23+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of being nicer</h2>
+<h2>Week 23</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal Where When What Highlighting Attribute Grid Shape Position Color Dot Line Rect Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_24_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of doors/spaces</h2>
+<h2>Week 24</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal Where When What List Grid Stacked Position Color Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_24+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of doors/spaces</h2>
+<h2>Week 24</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Numerical Temporal Relationship Who/Whom When What How Highlighting Attribute Tree Network Shape Position Size Color Texture Stroke Connection Dot Line Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_25_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of friends</h2>
+<h2>Week 25</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Who/Whom Where What How Highlighting Radial Tree Position Color Connection Dot Line Rect col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_25+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of friends</h2>
+<h2>Week 25</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal Relationship Who/Whom Where What Grid Shape Position Size Color Connection Dot Line Rect Triangle Circle Repeat Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_26_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of workspace</h2>
+<h2>Week 26</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal What Freeform Color Fill/NoFill Circle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_26+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of workspace</h2>
+<h2>Week 26</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical Who/Whom What How Highlighting Attribute Tree Facet Shape Position Size Color Connection Fill/NoFill Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_27_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of media</h2>
+<h2>Week 27</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal What List Grid Stacked Color Texture Connection Line Circle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_27+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of media</h2>
+<h2>Week 27</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Ordinal Temporal Who/Whom Where When What How Highlighting Attribute List Grid Facet Shape Position Size Color Dot Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_28_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of smiling at strangers</h2>
+<h2>Week 28</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Temporal Who/Whom Where When What Highlighting Grid Position Color Texture Orientation Triangle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_28+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of smiling at strangers</h2>
+<h2>Week 28</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Ordinal Temporal When What How Highlighting Attribute List Network Facet Freeform Shape Position Size Color Connection Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_29_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of boyfriend</h2>
+<h2>Week 29</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Temporal Who/Whom When What Highlighting List Position Color Orientation Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_29+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of boyfriend</h2>
+<h2>Week 29</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal Where When What How Highlighting Attribute Grid Stacked Position Size Color Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_30_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of our time alone</h2>
+<h2>Week 30</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal When What How Highlighting List Grid Position Size Color Containment/Enclosure Rect col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_30+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of our time alone</h2>
+<h2>Week 30</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Who/Whom Why What Highlighting Attribute List Stacked Shape Color Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_31_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of positive feelings</h2>
+<h2>Week 31</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Ordinal Who/Whom Why What Radial Freeform Shape Color Line Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_31+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of positive feelings</h2>
+<h2>Week 31</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal Where When What How Highlighting Attribute List Grid Shape Position Size Color Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_32_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of sounds</h2>
+<h2>Week 32</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal Where When What Grid Stacked Position Color Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_32+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of sounds</h2>
+<h2>Week 32</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Ordinal Numerical Intensity Who/Whom Why What How Attribute Grid Position Size Color Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_33_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of envy</h2>
+<h2>Week 33</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Who/Whom Why What List Grid Facet Shape Color Circle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_33+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of envy</h2>
+<h2>Week 33</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical Who/Whom What How Highlighting Attribute List Grid Facet Shape Size Color Orientation Stroke Dot Line Triangle Circle Repeat Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_34_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of urban wildlife</h2>
+<h2>Week 34</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Where What Radial Position Size Color Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_34+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of urban wildlife</h2>
+<h2>Week 34</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical Temporal When What How Attribute List Grid Shape Position Size Color Texture Stroke Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_35_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of getting dressed</h2>
+<h2>Week 35</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal Temporal Where When What List Grid Position Color Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_35+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of getting dressed</h2>
+<h2>Week 35</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Numerical Who/Whom What How Highlighting Attribute Facet Freeform Position Size Color Texture Orientation Dot Line Circle Repeat col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_36_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of indecision</h2>
+<h2>Week 36</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Temporal When What How Highlighting List Stacked Position Color Connection Dot Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_36+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of indecision</h2>
+<h2>Week 36</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Ordinal Who/Whom What How Attribute List Facet Freeform Shape Size Color Texture Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_37_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of swearing</h2>
+<h2>Week 37</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Who/Whom What How Highlighting Grid Facet Shape Color Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_37+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of swearing</h2>
+<h2>Week 37</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Ordinal Numerical Relationship Why What How Attribute Radial Network Freeform Size Color Connection Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_38_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of negative thoughts</h2>
+<h2>Week 38</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Who/Whom What Highlighting Stacked Facet Color Circle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_38+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of negative thoughts</h2>
+<h2>Week 38</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal Who/Whom Why What How Highlighting Attribute Radial Facet Freeform Size Color Texture Dot Line Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_39_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of beauty</h2>
+<h2>Week 39</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Where What List Facet Color Stroke Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_39+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of beauty</h2>
+<h2>Week 39</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Temporal Who/Whom When How Highlighting Attribute Grid Shape Position Color Orientation Connection Dot Line Rect Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_40_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of meeting new people</h2>
+<h2>Week 40</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Who/Whom What How Highlighting Stacked Facet Shape Color Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_40+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of meeting new people</h2>
+<h2>Week 40</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal What Attribute Grid Stacked Position Color Containment/Enclosure Dot Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_41_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of music</h2>
+<h2>Week 41</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal When What Attribute List Grid Stacked Facet Color Circle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_41+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of music</h2>
+<h2>Week 41</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Numerical Relationship Who/Whom What How Highlighting Attribute Radial Network Freeform Shape Size Color Connection Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_42_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of laughter</h2>
+<h2>Week 42</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Ordinal Temporal Who/Whom When What How Highlighting Attribute Grid Position Size Color Texture Dot Circle col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_42+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of laughter</h2>
+<h2>Week 42</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal What How Highlighting Attribute List Network Facet Freeform Size Color Texture Stroke Connection Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_43_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of trying new things</h2>
+<h2>Week 43</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal When What List Texture RealObject col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_43+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of trying new things</h2>
+<h2>Week 43</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical Temporal Who/Whom When What How Highlighting Attribute Grid Position Size Color Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_44_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of distractions</h2>
+<h2>Week 44</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Temporal When What Stacked Facet Position Color Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_44+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of distractions</h2>
+<h2>Week 44</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Who/Whom Why What How Highlighting Attribute Stacked Tree Size Color Connection Dot Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_45_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of apologies</h2>
+<h2>Week 45</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Who/Whom Why What Highlighting Attribute Tree Facet Color Line Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_45+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of apologies</h2>
+<h2>Week 45</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal Numerical Who/Whom Where What How Highlighting Attribute List Facet Shape Position Size Color Connection Dot Line Rect Repeat Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_46_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of books we own</h2>
+<h2>Week 46</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Who/Whom What Highlighting Attribute Grid Color Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_46+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of books we own</h2>
+<h2>Week 46</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Numerical Temporal What How Attribute Grid Position Size Color Dot Line Repeat Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_47_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of smells/scents</h2>
+<h2>Week 47</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Where What Highlighting Attribute Facet Freeform Color Containment/Enclosure Fill/NoFill Dot Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_47+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of smells/scents</h2>
+<h2>Week 47</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Numerical Temporal Who/Whom Where When What How Highlighting Attribute List Grid Facet Position Size Color Texture Stroke Connection Fill/NoFill Dot Line Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_48_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of eavesdropping</h2>
+<h2>Week 48</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Who/Whom Where What Highlighting Facet Freeform Color Fill/NoFill Dot Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_48+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of eavesdropping</h2>
+<h2>Week 48</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Group Who/Whom What Highlighting Attribute Facet Freeform Shape Position Color Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_49_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of "data"</h2>
+<h2>Week 49</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Temporal Who/Whom Where When What Grid Position Color Texture Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_49+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of "data"</h2>
+<h2>Week 49</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal Group Where What How Attribute Grid Facet Shape Color Containment/Enclosure Dot Line Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_50_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of our phones</h2>
+<h2>Week 50</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPhysical Nominal Ordinal What How Highlighting List Size Color Texture Fill/NoFill Dot Line col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_50+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of our phones</h2>
+<h2>Week 50</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Ordinal Temporal Who/Whom When Why What How Highlighting Attribute List Position Size Color Line Repeat Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_51_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of privacy</h2>
+<h2>Week 51</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item Internal: Self-Reflection Nominal Ordinal Who/Whom What How List Grid Color Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_51+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of privacy</h2>
+<h2>Week 51</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Temporal Who/Whom When What How Highlighting Attribute Grid Shape Position Color Dot Triangle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Giorgia_DearData_52_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of goodbye</h2>
+<h2>Week 52</h2>
+<h2>Giorgia</h2>
+</div> </div> </div> </div>
+<div class="iso-box item ExternalPeople Nominal Ordinal Temporal Who/Whom Where When What How List Grid Stacked Position Size Color Rect Circle Glyph col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/Stefanie_DearData_52+Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of goodbye</h2>
+<h2>Week 52</h2>
+<h2>Stefanie</h2>
+</div> </div> </div> </div>
+<div class="iso-box item col-md-4 col-sm-6"> 
+<div class="portfolio-thumb">
+ <img src="imagesdeardata/_DearData_0_Front.jpg" class="img-responsive" alt="Portfolio">
+<div class="portfolio-overlay"> <div class="portfolio-item">
+<h2>Week of </h2>
+<h2>Week </h2>
+<h2></h2>
+</div> </div> </div> </div>
+</div>
