@@ -88,8 +88,143 @@ img {
 }
 
 
+label {
+  padding-right: 1em;
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+
+/* MODAL STYLING */
+ /* ========================================== */
+ .modal-wrapper {
+  display: none;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+}
+.modal-wrapper.is-open {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+}
+.modal-body {
+  animation: pop 0.5s ease;
+  width: 90%;
+}
+header {
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  90% {
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+/*
+[data-modal-trigger] {
+  outline: 0;
+  color: white;
+  border: 1px solid #ffc107;
+  padding: 10px 20px;
+  background-color: transparent;
+  margin: 20px;
+  position: relative;
+}
+[data-modal-trigger]:before {
+  z-index: -1;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  content: '';
+  background-color: #ffc107;
+}
+[data-modal-trigger]:hover:before {
+  width: 100%;
+}
+*/
+.modal-body {
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.35);
+}
+.modal-body header {
+  background-color: #000000;
+  margin: 0;
+  padding: 10px 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #ffffff;
+}
+.modal-body img {
+  max-width: 100%;
+}
+.modal-body .modal-main {
+  padding: 10px;
+}
+.modal-body footer {
+  background-color: #000000;
+  margin: 0;
+  padding: 10px 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+.modal-body .close {
+  color: white;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+.modal-body p {
+  color: #727272;
+}
+.modal-body .cta {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin: 20px auto;
+}
+.modal-body .cta:hover, .modal-body .cta:active {
+  background-color: #ffffff;
+}
+
 /* preloader styles
 /* ========================================== */
+/*
 .preloader {
     position: fixed;
     top: 0;
@@ -131,7 +266,7 @@ img {
     opacity: 0; } }
 
 
-
+*/
 /* navigation styles
 /* ========================================== */
 .nav-container,
@@ -369,7 +504,7 @@ a.icon {
   top: 0;
   left: 0;
   z-index: 9999999;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   transition: all 0.6s ease;
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
@@ -434,15 +569,6 @@ a.icon {
 .header-two {
   background: url('../images/header-bg.jpg') no-repeat;
 }
-.header-three {
-  background: url('../images/header-three-bg.jpg') no-repeat;
-}
-.header-four {
-  background: url('../images/header-four-bg.jpg') no-repeat;
-}
-.header-five {
-  background: url('../images/header-five-bg.jpg') no-repeat;
-}
 
 /* Portfolio section styles
 /* ========================================== */
@@ -463,7 +589,7 @@ a.icon {
 } 
 
 #portfolio .portfolio-thumb .portfolio-overlay {
-  background: #141414;
+  background: #ffffff;
   position: absolute;
   top: 0;
   right: 0;
@@ -485,39 +611,14 @@ a.icon {
     padding: 40px 20px;
 }
 
+
 /*filter css*/
 .options {
     width: 100%;
     margin-bottom: 32px;
-    overflow: hidden;
+    padding-bottom: 3em;
 }
 
-.options li {
-    display: inline-block;
-    margin: 4px;
-}
-
-.options li label {
-    color: #666;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    padding: 8px 17px;
-    margin-right: 2px;
-    margin-left: 2px;
-    text-transform: uppercase;
-    display: block;
-    text-decoration: none;
-    transition: all 0.4s ease-in-out;
-}
-.options li label:active {
-  background: #111112 !important;
-}
-.options li label:hover,
-.options li label:focus {
-  background: #111112;
-  color: #ffffff;
-}
 
 /*isotope box css*/
 .iso-box-section {

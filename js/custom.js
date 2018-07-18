@@ -1,10 +1,11 @@
 
  /* jQuery Pre loader
   -----------------------------------------------*/
-$(window).load(function(){
+  /*
+$('#loadpls').load(function(){
     $('.preloader').fadeOut(1000); // set duration in brackets    
 });
-
+*/
 
 var $container;
 var filters = {};
@@ -183,6 +184,7 @@ jQuery(document).ready(function($){
 
  /* Navigation Bar
   -----------------------------------------------*/
+/*
 $(document).ready(function() { 
     "use strict";
 
@@ -220,7 +222,7 @@ $(document).ready(function() {
     })();
 
 });
-
+*/
 
 $(document).ready(function(){
             
@@ -248,56 +250,42 @@ $(document).ready(function(){
 
   });
 
-   /* MODAL IMAGE JS
+
+  /* MODAL SERVICE
   -------------------------------*/
-
-  // Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-
-   /* INCLUDE HTML
-  -------------------------------*/
-function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /*loop through a collection of all HTML elements:*/
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /*make an HTTP request using the attribute value as the file name:*/
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
+  /*
+  const modalService = () => {
+    const d = document;
+    const body = d.querySelector('body');
+    const buttons = d.querySelectorAll('[data-modal-trigger]');
+    
+    // attach click event to all modal triggers
+    for(let button of buttons) {
+      triggerEvent(button);
+    }
+    
+    function triggerEvent(button) {
+      button.addEventListener('click', () => {
+        const trigger = button.getAttribute('data-modal-trigger');
+        const modal = d.querySelector(`[data-modal=${trigger}]`);
+        const modalBody = modal.querySelector('.modal-body');
+        const closeBtn = modal.querySelector('.close');
+        
+        closeBtn.addEventListener('click', () => modal.classList.remove('is-open'))
+        modal.addEventListener('click', () => modal.classList.remove('is-open'))
+        
+        modalBody.addEventListener('click', (e) => e.stopPropagation());
+  
+        modal.classList.toggle('is-open');
+        
+        // Close modal when hitting escape
+        body.addEventListener('keydown', (e) => {
+          if(e.keyCode === 27) {
+            modal.classList.remove('is-open')
           }
-        } 
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /*exit the function:*/
-        return;
-      }
+        });
+      });
     }
   }
+  modalService();
+  */

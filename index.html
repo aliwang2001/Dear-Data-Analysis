@@ -1,164 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<!--
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-Template 2082 Pure Mix
+    <title>Analyzing the Dear Data Project</title>
 
-http://www.tooplate.com/view/2082-pure-mix
-
--->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-
-	<!-- Site title
-   ================================================== -->
-	<title>Dear Data</title>
-
-	<!-- Bootstrap CSS
-   ================================================== -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-
-	<!-- Animate CSS
-   ================================================== -->
-	<link rel="stylesheet" href="css/animate.min.css">
-
-	<!-- Font Icons CSS
-   ================================================== -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/ionicons.min.css">
-
-	<!-- Main CSS
-   ================================================== -->
-      <link rel="stylesheet" href="css/style.css">
-
-	<!-- Google web font 
-   ================================================== -->	
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/jumbotron.css" rel="stylesheet">
+  </head>
   
-  <script src="js/jquery.js"></script> 
-              <script> 
-              $(function(){
-                $("#divId").load("new.html"); 
-              });
-              </script>
-
-</head>
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">----</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Analyzing the Dear Data Project</h1>
+          <p>This is a formative study on the personal visualizations two designers produced over the course of an entire year. Please visit the <a href="http://www.dear-data.com/">original website</a> to check out their amazing work!</p>
+          <p><i>All credits go to Giorgia Lupi and Stefanie Posavec.</i></p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Link to paper &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="container">
+          <!--Starts the filtering table with checkboxes-->
+
+      <h2>Filtering the visualizations</h2>
+
+      <div class="row">      
+          <script src="js/filter.js"></script>
 
 
-<!-- Preloader section
-================================================== -->
-<div class="preloader">
-	<div class="sk-spinner sk-spinner-pulse"></div>
-</div>
-
-
-<!-- Navigation section
-================================================== -->
-<div class="nav-container">
-   <nav class="nav-inner transparent">
-
-      <div class="navbar">
-         <div class="container">
-            <div class="row">
-
-              <div class="brand">
-                <a href="index.html">Dear Data</a>
+        <!--Filter Group-->
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-header">
+                  Data Group
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><div class="option-set" data-group="ExternalPeople">
+                      <input type="checkbox" value=".ExternalPeople" id="ExternalPeople" /><label for="ExternalPeople">External: People</label>
+                      </div></li>
+                  <li class="list-group-item"><div class="option-set" data-group="InternalSelfReflection">
+                      <input type="checkbox" value=".InternalSelfReflection" id="InternalSelfReflection" /><label for="InternalSelfReflection">Internal: Self-Reflection</label>
+                      </div></li>
+                  <li class="list-group-item"><div class="option-set" data-group="ExternalPeople">
+                      <input type="checkbox" value=".ExternalPeople" id="ExternalPeople" /><label for="ExternalPeople">External: People</label>
+                      </div></li>
+                </ul>
               </div>
+          </div>
+          <!--Filter Group End-->
 
-              <div class="navicon">
-                <div class="menu-container">
+    
 
-                  <div class="circle dark inline">
-                    <i class="icon ion-navicon"></i>
-                  </div>
+        </div>
+      </div>
 
-                  <div class="list-menu">
-                    <i class="icon ion-close-round close-iframe"></i>
-                    <div class="intro-inner">
-                      <ul id="nav-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                      </ul>
+      
+      <div class="container" id="container">
+        <div class="row">
+            <p id="filter-display"></p>
+        
+            <script src="js/images.js"></script>
+
+          <!-- Card -->
+          <div class="col-md-3 item ExternalPhysicalObjectsEnvironments Nominal Temporal When Why How Highlighting Attribute Grid Stacked Shape Position Dot Glyph">
+              <div class="card mb-4">
+                <img class="card-img-top" src="imagesdeardata/Giorgia_DearData_01_Front.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Week 1: Clocks; Giorgia</h5>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#week1Giorgia">See legend</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-         </div>
-      </div>
-   </nav>
-</div>
+
+            <!-- Modal -->
+          <div class="modal fade" id="week1Giorgia" tabindex="-1" role="dialog" aria-labelledby="week1GiorgiaLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Week 1: Clocks; Giorgia</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <img class="large" src="imagesdeardata/Stefanie_DearData_01+Front.jpg"/>
+                          <img class="large" src="imagesdeardata/Stefanie_DearData_01+Back.jpg"/>
+                          <p></br><strong>Theme</strong>: External: Physical Objects/Environments, Nominal, </br><strong>Data</strong>: Temporal, </br><strong>Sematic</strong>: </br><strong>Context</strong>: When, How, </br><strong>Visual Annotation</strong>: </br><strong>Visual Layout</strong>: Radial, Shape, </br><strong>Visual Encoding Channels</strong>: Position, Orientation, </br><strong>Visual Marks</strong>: Glyph, </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                </div>
+              </div>
+            </div>
 
 
-<!-- Header section
-================================================== -->
-<section id="header" class="header-one">
-	<div class="container">
-		<div class="row">
 
-			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
-          <div class="header-thumb">
-              <h1 class="wow fadeIn" data-wow-delay="1.6s">Dear Data</h1>
-              <h3 class="wow fadeInUp" data-wow-delay="1.9s">personal visualizations</h3>
           </div>
-			</div>
 
-		</div>
-	</div>		
-</section>
+        </div>
 
 
-<!-- Portfolio section
-================================================== -->
-<section id="portfolio">
-   <div class="container">
-      <div class="row">
-
-         <div class="col-md-12 col-sm-12">
-
-              
-          <div id="divId" style="display:none;"></div>
-
-                  
-      </div>                          
-</section>
-
-<!-- Footer section
-================================================== -->
-<footer>
-	<div class="container">
-		<div class="row">
-
-			<div class="col-md-12 col-sm-12">
-				<p class="wow fadeInUp"  data-wow-delay="0.3s">Copyright © 2018</p>
-				<ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
-					<li><a href="#" class="fa fa-facebook"></a></li>
-					<li><a href="#" class="fa fa-twitter"></a></li>
-					<li><a href="#" class="fa fa-dribbble"></a></li>
-					<li><a href="#" class="fa fa-behance"></a></li>
-					<li><a href="#" class="fa fa-google-plus"></a></li>
-				</ul>
-			</div>
-			
-		</div>
-	</div>
-</footer>
-
-<!-- Javascript 
-================================================== -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
+      <footer class="container">
+          <hr>
+        <p class="float-right">
+            <a href="#">Back to top</a>
+          </p>
+          <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+          <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </footer>
 
 
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/holder.min.js"></script>
+    <script src="js/images.js"></script>
+
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
-
