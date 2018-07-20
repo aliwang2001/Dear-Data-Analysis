@@ -1,6 +1,6 @@
-Link to Explanations,,,Theme,,,Data,,,,,,Sematic,,Context,,,,,,,VisualAnnotation,,,VisualLayout,,,,,,,,VisualEncoding,,,,,,,,,,,,VisualMarks,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Title,Week,Who,Internal: Self-Reflection,ExternalPeople,ExternalPhysical,Nominal,Ordinal,Numerical,Temporal,Intensity,Geocoord,Relationship,Group,Who/Whom,Where,When,ExactTime,Why,What,How,PersonalInput,Highlighting,Attribute,List,Grid,Stacked,Radial,Tree,Network,Facet,Freeform,Shape,Position,Size,Color,Weight/boldness,Texture,Orientation,Stroke,Connection,Containment/Enclosure,Onomatopoeia,Fill/NoFill,Dot,Line,Rect,Triangle,Circle,Repeat,Area,Glyph,RealObject,Personal
+Link to Explanations,,,Theme,,,Data,,,,,,Sematic,,Context,,,,,,,Visual Annotation,,,Visual Layout,,,,,,,,Visual Encoding Channels,,,,,,,,,,,,Visual Marks,,,,,,,,,
+,,,,,,,,,,,,x,x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Title,Week,Who,Internal: Self-Reflection,External: People,External: Physical Objects/Environments,Nominal,Ordinal,Numerical,Temporal,Intensity or Amount or Frequency,Geocoord (approximate),Relationship,Group,Who/Whom,Where,When,//Exact Time Recorded,Why,What,How,Personal Input,Highlighting,Attribute,List,Grid,Stacked,Radial,Tree,Network,Facet,Freeform,Shape,Position,Size,Color,Weight/boldness,Texture,Orientation,Stroke,Connection,Containment/Enclosure,Onomatopoeia,Fill/NoFill,Dot,Line,Rect,Triangle,Circle,Repeat,Area,Glyph,Real Object,Personal
 clocks,1,Giorgia, ,,x,x,,,x,,,,,,,x,new,x,,x,new,xxx,x,,x,xxx,,,,,,x,x,,,,,,,,,,,x,,,,,,,x,,
 clocks,1,Stefanie,,,x,x,,,x,,,,,,,x,new,,,x,,,,,,,x,,,,,x,x,,,new,,x,,,,,,,,,,,,,x,,
 public transportation,2,Giorgia,,,x,x,,x,x,,,,,x,x,x,,,x,x,,xxx,x,xxx,xx,xxx,,,,,,,,x,x,,x,,,,,,,x,x,,,,,,x,,

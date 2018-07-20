@@ -1,0 +1,71 @@
+
+c = 3
+topics = 0
+div = ''
+while (c < numcolumns):
+    if data[0][c] != '':
+        if topics != 0:
+            div += '</ul> \n </div> \n </div>'
+        topics+=1
+        div += '<div class="col-md-3"> \n <div class="card mb-4"> \n <div class="card-header">'
+        div += data[0][c] + '</div> \n <ul class="list-group list-group-flush">'
+    div += '<li class="list-group-item"> \n <div class="option-set" data-group="' + ''.join(e for e in data[2][c] if e.isalnum()) + '">'
+    div += '<input type="checkbox" value=".' + ''.join(e for e in data[2][c] if e.isalnum()) + '" id="' + ''.join(e for e in data[2][c] if e.isalnum()) + '" /> \n <label for="' + ''.join(e for e in data[2][c] if e.isalnum()) + '">' + data[2][c] + '</label>'
+    div += '</div> \n </li>'
+    c+=1
+
+div += '</ul> \n </div> \n </div>'
+
+print topics
+
+f.write(div)
+f.write('<h3>Filter selections: </h3><p class="large" id="filter-display"></p> \n </div> \n </div> \n <div class="container"> \n <div class="row" id="container"> \n')
+
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+print('CREATING PICTURES.')
+#CREATING PICTURES AND MODALS
+section=''
+for r in range(3,numrows):
+    addons = ''
+    properties = ''
+    item = ''
+    name = data[r][2]
+    topic = data[r][0]
+    number = data[r][1]
+    title = 'Week ' + number + ': ' + topic + '; ' + name
+    for c in range(3,numcolumns):
+        if data[r][c] == "x" or data[r][c] == "xxx":
+            addons += ' ' + ''.join(e for e in data[2][c] if e.isalnum())
+            properties += data[2][c]
+            if c < numcolumns or data[0][c+1] == '':
+                properties += ', '
+        if data[0][c] != '':
+            properties += '</br> \n <strong>' + data[0][c] + '</strong>: '
+    item += '<div class="col-md-3 item' + addons + ' ">'
+    imgsrc = 'imagesdeardata/' + name + '_DearData_'
+    if len(data[r][1]) <= 1:
+        imgsrc += '0' + number
+    else:
+        imgsrc += data[r][1]
+    if data[r][2] == "Stefanie":
+        imgsrc += '+'
+    else:
+        imgsrc += '_'
+    item += '<div class="card mb-4"> \n <img class="card-img-top" src="' + imgsrc + 'Front.jpg">'
+    item += '<div class="card-body"> \n <h5 class="card-title">' + title + '</h5>'
+    item += '<div class="d-flex justify-content-between align-items-center"> \n <div class="btn-group">'
+    item += '<button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#' + name + number + '">See legend</button>'
+    item += '</div> \n </div> \n </div> \n </div> \n </div>'
+    f.write(item)
+    section += '<div class="modal fade" id="' + name + number + '" tabindex="-1" role="dialog" aria-labelledby="' + name + number + '" aria-hidden="true">'
+    section += '<div class="modal-dialog modal-lg" role="document"> \n <div class="modal-content"> \n <div class="modal-header"> \n <h5 class="modal-title" id="' + name + number + '">'
+    section += title + '</h5>'
+    section += '<button type="button" class="close" data-dismiss="modal" aria-label="Close"> \n <span aria-hidden="true">&times;</span> \n </button> \n </div> \n <div class="modal-body">'
+    section += '<img class="large" src="' + imgsrc + 'Front.jpg"/>'
+    section += '<img class="large" src="' + imgsrc + 'Back.jpg"/>'
+    section += '<p>' + properties + '</p>'
+    section += '<div class="modal-footer"> \n <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> \n </div> \n </div> \n </div> \n </div>'
+f.write('</div></div>')
+f.write(section)
+f.close
